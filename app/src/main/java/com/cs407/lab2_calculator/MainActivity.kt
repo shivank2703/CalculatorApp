@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity() {
         divideButton.setOnClickListener {
             val num1 = firstNumber.text.toString().toInt()
             val num2 = secondNumber.text.toString().toInt()
-            val errorMessage = "Please select valid numbers"
+            val errorMessage = "Divide by zero error"
             if (num2 == 0) {
                 Toast.makeText(this, errorMessage, Toast.LENGTH_SHORT).show()
             }
